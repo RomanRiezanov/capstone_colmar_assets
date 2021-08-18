@@ -1,6 +1,3 @@
-body {
-    margin-left: 24px;
-}
 .header {
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -17,6 +14,7 @@ body {
     grid-area: logo;
     display: flex;
     align-items: center;
+    margin-left: 24px;
 }
 
 .header-nav {
@@ -67,19 +65,102 @@ body {
 
 .main-header {
     display: grid;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 60% 40%; 
     gap: 0px 0px; 
     align-items: center;
     grid-template-areas:
     "main-header-left main-header-right";
     width: 100%; 
+    background-color: #d9d9d9;
 }
 
 .main-header-left {
     grid-area: main-header-left;
+    padding: 32px 40px 32px 0;
+    margin-left: 24px;
 }
 
 .main-header-right {
     grid-area: main-header-right;  
+    width: 75%;
+    margin-left: 24px;
+}
+
+.main-header-image {
+    width: 100%;
+}
+
+.main-header-right-h2 {
+    font-family: Arial;
+    font-size: 64px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.main-header-right-text {
+    font-family: Arial;
+    font-size: 36px;
+    color: #3d3d3d;
+    margin-bottom: 48px;
+}
+
+.main-header-right-btn {
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    padding: 8px 0;
+}
+
+.button-start {
+    background-color: #3d3d3d;
+    padding: 12px 0;
+}
+
+/* MAIN SECTION 2 */
+
+.main-practicing-section {
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    gap: 0px 0px; 
+    align-items: center;
+    grid-template-areas:
+    "main-practicing-section-left main-practicing-section-right";
+    width: 100%; 
+}
+
+.main-practicing-section-left {
+    grid-area: main-practicing-section-left;
+    padding: 32px 40px 32px 0;
+    margin-left: 24px;
+}
+
+.main-practicing-section-left-image {
+    width: 100%;
+}
+
+.main-practicing-section-left-h3 {
+    font-family: Arial;
+    font-size: 48px;
+    color: #3d3d3d;
+    font-weight: 800;
+    margin: 32px 0 24px 0;
+}
+
+.main-practicing-section-left-text {
+    font-family: Arial;
+    font-size: 18px;
+    color: #3d3d3d;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.main-practicing-section-left-author-text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 48px;
 }
