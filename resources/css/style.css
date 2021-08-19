@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header {
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -63,6 +65,8 @@
     font-weight: 300;
 }
 
+/* MAIN HEADER SECTION */
+
 .main-header {
     display: grid;
     grid-template-columns: 60% 40%; 
@@ -120,13 +124,12 @@
     padding: 12px 0;
 }
 
-/* MAIN SECTION 2 */
+/* MAIN PRACTISING SECTION 2 */
 
 .main-practicing-section {
     display: grid;
     grid-template-columns: 60% 40%; 
     gap: 0px 0px; 
-    align-items: center;
     grid-template-areas:
     "main-practicing-section-left main-practicing-section-right";
     width: 100%; 
@@ -136,6 +139,7 @@
     grid-area: main-practicing-section-left;
     padding: 32px 40px 32px 0;
     margin-left: 24px;
+    border-right: 1px solid #d9d9d9;
 }
 
 .main-practicing-section-left-image {
@@ -163,4 +167,164 @@
     font-size: 16px;
     color: #000000;
     margin-bottom: 48px;
+}
+
+.main-practicing-section-aside {
+    display: grid;
+    width: 100%; 
+    margin-top: 32px;
+    height: 70%;
+}
+
+.main-practicing-section-aside-block {
+    display: grid;
+    grid-template-columns: 35% 65%; 
+    width: 100%; 
+    padding: 24px 0;
+}
+
+.main-practicing-section-aside-block:first-child {
+    border-bottom: 5px solid #d9d9d9;
+}
+
+.main-practicing-section-aside-block:nth-child(3n) {
+    background-color: #d9d9d9;
+}
+
+.main-practicing-section-aside-block-left {
+    margin-left: 32px;
+}
+
+.main-practicing-section-aside-block-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.main-practicing-section-aside-block-h4 {
+    font-family: Arial;
+    font-size: 32px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.main-practicing-section-aside-block-text {
+    font-family: Arial;
+    font-size: 20px;
+    color: #3d3d3d;
+    font-weight: lighter;
+    margin-bottom: 16px;
+}
+
+.main-practicing-section-aside-block-link {
+    font-family: Arial;
+    text-decoration: none;
+    color: #009CE0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-practicing-section-aside-block-image {
+    width: 100%;
+}
+
+/* MAIN LEARNING SECTION 3 */
+
+.main-learning-section {
+    background-color: #d9d9d9;
+}
+
+.main-learning-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    padding: 0 112px 24px 144px;
+}
+
+.main-learning-block {
+    background-color: #ffffff;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.main-learning-h3 {
+    font-family: Arial;
+    font-size: 48px;
+    color: #3d3d3d;
+    font-weight: 800;
+    text-align: center;
+    padding: 48px 0;
+}
+
+.main-learning-block-image {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.main-learning-h4 {
+    font-family: Arial;
+    font-size: 32px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-left: 24px;
+}
+
+.main-learning-text {
+    font-family: Arial;
+    font-size: 20px;
+    color: #808080;
+    font-weight: lighter;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    line-height: 115%;
+}
+
+.main-learning-text:nth-child(2n){
+    margin-bottom: 32px;
+}
+
+/* MAIN EXHIBIT SECTION 4 */
+
+.main-exhibit-article {
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    width: 100%;
+}
+
+.main-exhibit-article-left {
+    margin-left: 24px;
+}
+
+.main-exhibit-h3 {
+    font-family: Arial;
+    font-size: 48px;
+    color: #3d3d3d;
+    font-weight: 800;
+    text-align: center;
+    padding: 48px 0;
+}
+
+.main-exhibit-article-video {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.main-exhibit-article-h4 {
+    font-family: Arial;
+    font-size: 32px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.main-exhibit-article-text {
+    font-family: Arial;
+    font-size: 20px;
+    color: #808080;
+    font-weight: lighter;
+    margin-bottom: 48px;
+    line-height: 115%;
 }
