@@ -292,6 +292,8 @@
     display: grid;
     grid-template-columns: 60% 40%; 
     width: 100%;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .main-exhibit-article-left {
@@ -325,6 +327,95 @@
     font-size: 20px;
     color: #808080;
     font-weight: lighter;
-    margin-bottom: 48px;
     line-height: 115%;
+}
+
+.main-exhibit-article-left {
+  margin-right: 24px;
+}
+
+.main-exhibit-article-aside {
+  display: grid;
+  width: 100%; 
+  height: 70%;
+}
+
+.main-exhibit-article-aside-block {
+  display: grid;
+  grid-template-columns: 35% 65%; 
+  align-items: center;
+  width: 100%; 
+  padding: 24px 0;
+}
+
+.main-exhibit-article-aside-block:nth-child(1) {
+    background-color: #d9d9d9;
+}
+
+.main-exhibit-article-aside-block-left {
+    padding-left: 16px;
+}
+
+.main-exhibit-article-image {
+  width: 100%;
+}
+
+.main-exhibit-article-aside-block-right {
+    padding-left: 24px;
+}
+
+.main-exhibit-article-right-h4 {
+    font-family: Arial;
+    font-size: 32px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.main-exhibit-article-right-text {
+    font-family: Arial;
+    font-size: 20px;
+    color: #808080;
+    font-weight: lighter;
+    line-height: 115%;
+}
+
+/* MAIN EXHIBIT SECTION 4 */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    margin-bottom: 48px;
+    padding-top: 24px;
+}
+
+.footer-left {
+    padding-left: 36px;
+}
+
+.footer-text {
+    font-family: Arial;
+    font-size: 16px; 
+    color: #808080;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-navigation-link {
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.footer-navigation-link:nth-child(2n) {
+    margin-right: 24px;
+}
+
+.footer-navigation-text {
+    font-family: Arial;
+    font-size: 16px; 
+    color: #808080;
 }
