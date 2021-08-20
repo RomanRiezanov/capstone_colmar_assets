@@ -49,6 +49,10 @@
     width: auto;
 }
 
+.image-mobile-logo {
+    display: none;
+}
+
 .logo-name-first {
     font-family: Arial;
     font-size: 24px;
@@ -230,6 +234,10 @@
     width: 100%;
 }
 
+.main-practicing-section-aside-block-mobile-image {
+    display: none;
+}
+
 /* MAIN LEARNING SECTION 3 */
 
 .main-learning-section {
@@ -241,6 +249,10 @@
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     padding: 0 112px 24px 144px;
+}
+
+.main-learning-mobile {
+    display: none;
 }
 
 .main-learning-block {
@@ -380,7 +392,7 @@
     line-height: 115%;
 }
 
-/* MAIN EXHIBIT SECTION 4 */
+/* FOOTER 5 */
 
 .footer {
     display: grid;
@@ -418,4 +430,141 @@
     font-family: Arial;
     font-size: 16px; 
     color: #808080;
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+   .logo-name-first, .logo-name-second {
+       display: none;
+   } 
+   .header-nav {
+       display: none;
+   }
+   .header {
+        grid-auto-columns: 1fr; 
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 0px 0px; 
+        align-items: center;
+        width: 100%; 
+        height: 64px;
+    }
+    .image-mobile-logo {
+        display: block;
+    }
+    .main-header {
+        display: block;
+    }
+    .main-header-left {
+        padding: 0;
+        margin: 0;
+    }
+    .main-header-right-h2 {
+        margin: 32px 16px 32px 16px;
+    }
+    .main-header-right {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 32px;
+    }
+    .main-header-right-text {
+        margin: 0 16px 32px 16px;
+    }
+    .button-start {
+        margin: 0 16px;
+        background-color: #808080;
+    }
+    .main-practicing-section {
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .main-practicing-section-left {
+        display: none;
+    }
+    .main-practicing-section-aside-block {
+        grid-template-columns: 1fr;
+        padding: 32px 0;
+    }
+    .main-practicing-section-aside-block-h4 {
+        margin-top: 32px;
+    }
+    .main-practicing-section-aside-block-left {
+        margin: 0 16px;
+    }
+    .main-practicing-section-aside-block:first-child {
+        border: 0;
+        padding: 0;
+    }
+    .main-practicing-section-aside-block-image {
+        display: none;
+    }
+    .main-practicing-section-aside-block-mobile-image {
+        display: block;
+        width: 100%;
+    }
+    .main-practicing-section-aside-block:nth-child(3n) {
+        background-color: transparent;
+    }
+    .main-learning-section {
+        background-color: transparent;
+    }
+    .main-learning-article {
+        display: block;
+        padding: 0;
+    }
+    .main-learning-mobile {
+        display: block;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .main-learning-block {
+        display: none;
+    }
+    .main-learning-h3 {
+        padding: 32px 0;
+    }
+    .main-learning-mobile-block-link {
+        text-decoration: none;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: 600;
+        color: #3d3d3d;
+    }
+    .main-learning-mobile-block {
+        background-color: #d9d9d9;
+        margin: 16px 16px 8px 16px;
+        padding: 24px 0 24px 16px;
+    }
+    .main-exhibit-article {
+        display: block;
+        padding: 0;
+        border-bottom: none;
+    }
+    .main-exhibit-h3 {
+        padding: 32px 0;
+    }
+    .main-exhibit-article-left {
+        margin: 0;
+    }
+    .main-exhibit-article-h4, .main-exhibit-article-text {
+        display: none;
+    }
+    .main-exhibit-article-aside {
+        display: none;
+    }
+    .main-exhibit-article-video {
+        margin: 0;
+    }
+    .footer {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+    .footer-navigation {
+        display: none;
+    }
+    .footer-text {
+        color: #3d3d3d;
+    }
 }
